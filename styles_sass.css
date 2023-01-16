@@ -1,0 +1,29 @@
+.navbar-size {
+  width: 35%;
+  border-radius: 20px;
+  height: 50px;
+  margin: auto;
+}
+.cardo {
+  width: 100%;
+  height: 65%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.product-description-box {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 50px;
+}
