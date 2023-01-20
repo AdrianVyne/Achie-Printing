@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achie's Printing - Photocopy Product Page</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+  </head>
+
+  <!-- BOOTSTRAP ICONS 1.10.3  CDN-->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+  />
+  <!-- BOOTSTRAP 5.2 CDN-->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiffy slider CDN-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+    crossorigin="anonymous"
+    defer
+  ></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
+
+  <!-- HOMEMADE CSS-->
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+
+  <body>
+    <!-----top nav bar-------->
+    <nav class="navbar navbar-expand-sm bars" id="home">
+      <div class="container-fluid ps-3">
+        <a href="index.html"> <img src="img/vinyl.png" height="50px" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <form class="d-md-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Product Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-search"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-----bottom nav bar -------->
+    <div class="text-center fixed-bottom mb-5 rounded-2">
+      <a href="index.html#ProductsandServices"
+        ><button type="button" class="btn-bd-primary">Home</button></a
+      >
+
+      <a href="#home">
+        <button type="button" class="btn-bd-primary">
+          <img src="img/arrow-up.svg" /></button
+      ></a>
+    </div>
+    <!------PLACE NEW INPUT HERE -------->
+    <!------PLACE NEW INPUT HERE -------->
+    <!------PLACE NEW INPUT HERE -------->
+    <!------PLACE NEW INPUT HERE -------->
+    <!------PLACE NEW INPUT HERE -------->
+    <!------PLACE NEW INPUT HERE -------->
+    <!------PLACE NEW INPUT HERE -------->
+    <!------PLACE NEW INPUT HERE -------->
+    <!-----footer-------->
+    <footer class="py-5 border-top greenbg dark-colorfont">
+      <div class="container-fluid mt-3">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-4">
+            <h2>Achie's Printing</h2>
+            <h6>
+              we're more than just a printing shop - we're part of the community
+            </h6>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-4 col-sm-6">
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://www.facebook.com/profile.php?id=100052801946765"
+                target="_blank"
+                class="sociallinks"
+              >
+                <img
+                  src="img/facebook.svg"
+                  class="card-img-top p-2"
+                  alt="facebook icon"
+                  height="50rem"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="sociallinks"
+              >
+                <img
+                  src="img/instagram.svg"
+                  class="card-img-top p-2"
+                  alt="Instagram Icon"
+                  height="50rem"
+                />
+              </a>
+              <a href="http://twitter.com/" target="_blank" class="sociallinks">
+                <img
+                  src="img/twitter.svg"
+                  class="card-img-top p-2"
+                  alt="Twitter Icon"
+                  height="50rem"
+                />
+              </a>
+              <a
+                href="mailto:ansheened@gmail.com"
+                target="_blank"
+                class="sociallinks"
+              >
+                <img
+                  src="img/envelope-at-fill.svg"
+                  class="card-img-top p-2"
+                  alt="Email Icon"
+                  height="50rem"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "110237597413659");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v15.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+  </body>
+</html>

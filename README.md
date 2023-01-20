@@ -1,7 +1,7 @@
 # Achie Printing Website 🖨️🎨
 
 Welcome to the GitHub repository for the Achie Printing website! 🎉
-This website was created to showcase the printing services offered by Achie Printing. The website is built using HTML, CSS, JavaScript and Angular.
+This website was created to showcase the printing services offered by Achie Printing. The website is built using HTML, CSS, and JavaScript.
 
 ## Live Website 🌍
 

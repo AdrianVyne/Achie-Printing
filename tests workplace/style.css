@@ -1,0 +1,60 @@
+/*no diplay for text*/
+.nodisp {
+  display: none;
+}
+
+/*click reveal for pic 1*/
+#pic1 {
+  display: none;
+}
+#txt1 {
+  display: none;
+}
+
+#pic1:target{
+  display: inline;
+}
+
+#txt1:target{
+  display: inline;
+}
+/*click reveal for pic 2*/
+#pic2 {
+  display: none;
+}
+
+#pic2:target {
+  display: inline;
+}
+/*click reveal for pic 3*/
+#pic3 {
+  display: none;
+}
+
+#pic3:target {
+  display: inline;
+}
+/*click reveal for pic 4*/
+#pic4 {
+  display: none;
+}
+
+#pic4:target {
+  display: inline;
+}
+/*click reveal for pic 5*/
+#pic5 {
+  display: none;
+}
+
+#pic5:target {
+  display: inline;
+}
+/*click reveal for pic 6*/
+#pic6 {
+  display: none;
+}
+
+#pic6:target {
+  display: inline;
+}
