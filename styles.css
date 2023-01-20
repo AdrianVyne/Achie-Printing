@@ -11,6 +11,10 @@ p {
 
 h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+ color: rgb(0, 82, 18);
+}
+h6 {
+  color: antiquewhite;
 }
 .card {
   font-weight: bold;
@@ -87,7 +91,12 @@ div p {
   display: block;
   text-align: center;
   font-size: large;
-  color: rgb(53, 83, 38);
+  font-weight: bolder;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+a:link {
+  text-decoration: none;
 }
 
 .botnav {
@@ -109,7 +118,7 @@ div p {
   background-color: rgb(124, 153, 130);
 }
 .vlgreenbg {
-  background-color: rgba(179, 157, 150, 0.7);
+  background-color: rgba(179, 157, 150, 0.897);
 }
 
 .botnav a:hover {
@@ -131,7 +140,7 @@ div p {
   background-color: rgb(0, 156, 0);
   border-color: rgba(0, 141, 0, 0.582);
   border-radius: 0.5rem;
-  padding : .25 rem;
+  padding: 0.25 rem;
   font-size: 1 rem;
 }
 .gry {
@@ -143,6 +152,7 @@ div p {
   display: flex;
   padding: 1em;
 }
+
 .b {
   display: block;
   margin-right: 0;
@@ -154,4 +164,78 @@ div p {
 }
 .light-colorfont {
   color: rgb(53, 83, 38);
+}
+/* css part for sub pages*/
+/*no diplay for text*/
+.nodisp {
+  display: none;
+}
+
+/*click reveal for pic 1*/
+#pic1 {
+  display: none;
+}
+#txt1 {
+  display: none;
+}
+
+#pic1:target {
+  display: inline;
+}
+
+#txt1:target {
+  display: inline;
+}
+/*click reveal for pic 2*/
+#pic2 {
+  display: none;
+}
+
+#pic2:target {
+  display: inline;
+}
+/*click reveal for pic 3*/
+#pic3 {
+  display: none;
+}
+
+#pic3:target {
+  display: inline;
+}
+/*click reveal for pic 4*/
+#pic4 {
+  display: none;
+}
+
+#pic4:target {
+  display: inline;
+}
+/*click reveal for pic 5*/
+#pic5 {
+  display: none;
+}
+
+#pic5:target {
+  display: inline;
+}
+/*click reveal for pic 6*/
+#pic6 {
+  display: none;
+}
+
+#pic6:target {
+  display: inline;
+}
+
+@media screen and (max-width: 375px) {
+  .sizechange {
+    height: 350px;
+  }
+  .other-site-font {
+    font-size: small;
+  }
+}
+.other-site-font {
+  color: black;
+  text-align: left;
 }

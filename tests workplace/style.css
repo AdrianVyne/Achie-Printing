@@ -58,3 +58,9 @@
 #pic6:target {
   display: inline;
 }
+
+@media screen and (max-width: 375px) {
+  .sizechange {
+    height:350px
+  }
+}
