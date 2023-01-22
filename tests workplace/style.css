@@ -11,11 +11,11 @@
   display: none;
 }
 
-#pic1:target{
+#pic1:target {
   display: inline;
 }
 
-#txt1:target{
+#txt1:target {
   display: inline;
 }
 /*click reveal for pic 2*/
@@ -59,8 +59,8 @@
   display: inline;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .sizechange {
-    height:350px
+    width: 100%;
   }
 }

@@ -11,7 +11,7 @@ p {
 
 h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
- color: rgb(0, 82, 18);
+  color: rgb(0, 82, 18);
 }
 h6 {
   color: antiquewhite;
@@ -226,16 +226,50 @@ a:link {
 #pic6:target {
   display: inline;
 }
+/*click reveal for pic 7*/
+#pic7 {
+  display: none;
+}
 
-@media screen and (max-width: 375px) {
+#pic7:target {
+  display: inline;
+}
+/*click reveal for pic 8*/
+#pic8 {
+  display: none;
+}
+
+#pic8:target {
+  display: inline;
+}
+/*click reveal for pic 9*/
+#pic9 {
+  display: none;
+}
+
+#pic9:target {
+  display: inline;
+}
+/*click reveal for pic 10*/
+#pic10 {
+  display: none;
+}
+
+#pic10:target {
+  display: inline;
+}
+@media screen and (max-width: 500px) {
   .sizechange {
-    height: 350px;
+    width: 100%;
+    height: auto;
   }
   .other-site-font {
-    font-size: small;
+    font-size: smaller;
+    margin-top: 0%;
   }
 }
 .other-site-font {
   color: black;
   text-align: left;
+  font-weight: normal;
 }
