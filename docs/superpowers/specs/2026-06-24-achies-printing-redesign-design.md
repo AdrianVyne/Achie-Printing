@@ -117,7 +117,7 @@ Every page receives:
 - Descriptive `alt` text on every image
 - Canonical `<link rel="canonical">` on every page
 - `schema.org/LocalBusiness` JSON-LD on homepage only:
-  - Name, address (Doña Pilar Village, Davao), phone, email, hours, geo coordinates, social profiles
+  - Name, address (Doña Pilar Village, Davao), phone, email, hours (Mon–Sun 8:00 AM – 7:00 PM), geo coordinates, social profiles
 - `sitemap.xml` — static file listing all 15 pages
 
 ---
