@@ -331,3 +331,206 @@
     </div>
   </div>
 </section>
+
+<!-- CONTACT -->
+<section class="py-16 bg-cream" id="contact">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="font-nunito font-black text-3xl md:text-4xl text-charcoal text-center mb-12" data-aos="fade-up">Find Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <div class="sticker-card overflow-hidden" data-aos="fade-right">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7589499563268!2d125.64776928811081!3d7.121849299677013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d94dfc9c805%3A0x34e4d7ac2fac8395!2sAchie&#39;s%20Printing!5e0!3m2!1sen!2sph!4v1673847724656!5m2!1sen!2sph"
+          width="100%" height="320" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Achie's Printing on Google Maps" class="block w-full"></iframe>
+      </div>
+      <div class="space-y-4" data-aos="fade-left">
+        <div class="sticker-card p-5 flex items-start gap-3">
+          <i class="ph ph-map-pin text-2xl text-coral mt-0.5 shrink-0"></i>
+          <div>
+            <h3 class="font-nunito font-black text-charcoal">Address</h3>
+            <p class="font-nunito text-charcoal/70 text-sm">72 Doña Pilar Village, Davao City, Philippines</p>
+          </div>
+        </div>
+        <div class="sticker-card p-5 flex items-start gap-3">
+          <i class="ph ph-phone text-2xl text-coral mt-0.5 shrink-0"></i>
+          <div>
+            <h3 class="font-nunito font-black text-charcoal">Phone</h3>
+            <a href="tel:+639012345678" class="font-nunito text-charcoal/70 text-sm hover:text-coral transition-colors">+63 901 234 5678</a>
+          </div>
+        </div>
+        <div class="sticker-card p-5 flex items-start gap-3">
+          <i class="ph ph-clock text-2xl text-coral mt-0.5 shrink-0"></i>
+          <div>
+            <h3 class="font-nunito font-black text-charcoal">Store Hours</h3>
+            <p class="font-nunito text-charcoal/70 text-sm">Monday – Sunday, 8:00 AM – 7:00 PM</p>
+            <p class="font-nunito text-charcoal/50 text-xs">Philippine Time (UTC+08:00)</p>
+          </div>
+        </div>
+        <a href="https://m.me/110237597413659" target="_blank" rel="noopener"
+           class="sticker-btn bg-coral text-white px-6 py-3 block text-center">Chat with us on Messenger →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-16 bg-white" id="faq">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="font-nunito font-black text-3xl md:text-4xl text-charcoal text-center mb-12" data-aos="fade-up">Popular Questions</h2>
+    <div class="space-y-3" x-data="{ active: null }">
+
+      <div class="sticker-card overflow-hidden" data-aos="fade-up">
+        <button @click="active = active === 1 ? null : 1"
+                class="w-full flex items-center justify-between p-5 text-left font-nunito font-bold text-charcoal hover:text-coral transition-colors">
+          <span>What types of printing services do you offer?</span>
+          <i class="ph ph-caret-down text-xl transition-transform duration-300" :class="{ 'rotate-180': active === 1 }"></i>
+        </button>
+        <div x-show="active === 1" x-transition class="px-5 pb-5">
+          <p class="font-nunito text-charcoal/70 text-sm leading-relaxed">We offer a wide range of printing services, including digital printing, screen printing, and large format printing. We can print on paper, cardboard, fabric, vinyl, and more.</p>
+        </div>
+      </div>
+
+      <div class="sticker-card overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+        <button @click="active = active === 2 ? null : 2"
+                class="w-full flex items-center justify-between p-5 text-left font-nunito font-bold text-charcoal hover:text-coral transition-colors">
+          <span>What file formats do you accept?</span>
+          <i class="ph ph-caret-down text-xl transition-transform duration-300" :class="{ 'rotate-180': active === 2 }"></i>
+        </button>
+        <div x-show="active === 2" x-transition class="px-5 pb-5">
+          <p class="font-nunito text-charcoal/70 text-sm leading-relaxed">We accept PDF, JPEG, PNG, and TIFF. For best results, files should be high resolution (300 DPI) in CMYK color mode.</p>
+        </div>
+      </div>
+
+      <div class="sticker-card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <button @click="active = active === 3 ? null : 3"
+                class="w-full flex items-center justify-between p-5 text-left font-nunito font-bold text-charcoal hover:text-coral transition-colors">
+          <span>What is your turnaround time?</span>
+          <i class="ph ph-caret-down text-xl transition-transform duration-300" :class="{ 'rotate-180': active === 3 }"></i>
+        </button>
+        <div x-show="active === 3" x-transition class="px-5 pb-5">
+          <p class="font-nunito text-charcoal/70 text-sm leading-relaxed">Turnaround depends on the job size and complexity. We'll give you an estimated time when you place your order. Many simple jobs are done same day.</p>
+        </div>
+      </div>
+
+      <div class="sticker-card overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+        <button @click="active = active === 4 ? null : 4"
+                class="w-full flex items-center justify-between p-5 text-left font-nunito font-bold text-charcoal hover:text-coral transition-colors">
+          <span>Do you offer design services?</span>
+          <i class="ph ph-caret-down text-xl transition-transform duration-300" :class="{ 'rotate-180': active === 4 }"></i>
+        </button>
+        <div x-show="active === 4" x-transition class="px-5 pb-5">
+          <p class="font-nunito text-charcoal/70 text-sm leading-relaxed">Yes! We can help design your print or work with a file you provide. Message us on Messenger to discuss your project.</p>
+        </div>
+      </div>
+
+      <div class="sticker-card overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <button @click="active = active === 5 ? null : 5"
+                class="w-full flex items-center justify-between p-5 text-left font-nunito font-bold text-charcoal hover:text-coral transition-colors">
+          <span>What are your payment options?</span>
+          <i class="ph ph-caret-down text-xl transition-transform duration-300" :class="{ 'rotate-180': active === 5 }"></i>
+        </button>
+        <div x-show="active === 5" x-transition class="px-5 pb-5">
+          <p class="font-nunito text-charcoal/70 text-sm leading-relaxed">We accept cash, GCash, and bank transfers. Ask us for details when you place your order.</p>
+        </div>
+      </div>
+
+      <div class="sticker-card overflow-hidden" data-aos="fade-up" data-aos-delay="250">
+        <button @click="active = active === 6 ? null : 6"
+                class="w-full flex items-center justify-between p-5 text-left font-nunito font-bold text-charcoal hover:text-coral transition-colors">
+          <span>Do you offer wholesale pricing?</span>
+          <i class="ph ph-caret-down text-xl transition-transform duration-300" :class="{ 'rotate-180': active === 6 }"></i>
+        </button>
+        <div x-show="active === 6" x-transition class="px-5 pb-5">
+          <p class="font-nunito text-charcoal/70 text-sm leading-relaxed">Yes, we offer discounts for large quantity orders. Message us on Messenger for a custom quote.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FLOATING CTA -->
+<div class="messenger-float">
+  <a href="https://m.me/110237597413659" target="_blank" rel="noopener"
+     aria-label="Message Achie's Printing on Facebook Messenger"
+     class="sticker-btn bg-coral text-white flex items-center gap-2 px-4 py-3 text-sm">
+    <i class="ph-fill ph-messenger-logo text-xl"></i>
+    <span class="hidden sm:inline font-bold">Message Us</span>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-charcoal text-cream py-12 font-nunito">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-white/20">
+      <div>
+        <h3 class="font-black text-xl text-white mb-2">Achie's Printing</h3>
+        <p class="text-white/70 text-sm leading-relaxed">The printing shop Doña Pilar grew up with. Quick, honest, and priced right.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-3">Store Hours</h4>
+        <p class="text-white/70 text-sm">Monday – Sunday</p>
+        <p class="text-white/70 text-sm">8:00 AM – 7:00 PM</p>
+        <p class="text-white/50 text-xs mt-1">Philippine Time (UTC+08:00)</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-3">Connect</h4>
+        <div class="flex gap-3 mb-4">
+          <a href="https://www.facebook.com/profile.php?id=100052801946765" target="_blank" rel="noopener" aria-label="Facebook"
+             class="bg-white/10 hover:bg-coral rounded-full p-2 transition-colors">
+            <i class="ph ph-facebook-logo text-xl text-white"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"
+             class="bg-white/10 hover:bg-coral rounded-full p-2 transition-colors">
+            <i class="ph ph-instagram-logo text-xl text-white"></i></a>
+          <a href="mailto:ansheened@gmail.com" aria-label="Email"
+             class="bg-white/10 hover:bg-coral rounded-full p-2 transition-colors">
+            <i class="ph ph-envelope text-xl text-white"></i></a>
+          <a href="https://m.me/110237597413659" target="_blank" rel="noopener" aria-label="Messenger"
+             class="bg-white/10 hover:bg-coral rounded-full p-2 transition-colors">
+            <i class="ph ph-messenger-logo text-xl text-white"></i></a>
+        </div>
+        <a href="https://m.me/110237597413659" target="_blank" rel="noopener"
+           class="sticker-btn bg-coral text-white px-5 py-2 text-sm block text-center">Send us a message</a>
+      </div>
+    </div>
+    <p class="text-center text-white/40 text-xs mt-6">© 2025 Achie's Printing – Doña Pilar Village, Davao City, Philippines</p>
+  </div>
+</footer>
+
+<!-- FB Chat Plugin -->
+<div id="fb-root"></div>
+<div id="fb-customer-chat" class="fb-customerchat"></div>
+<script>
+  var chatbox = document.getElementById("fb-customer-chat");
+  chatbox.setAttribute("page_id", "110237597413659");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+<script>
+  window.fbAsyncInit = function () { FB.init({ xfbml: true, version: "v15.0" }); };
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, "script", "facebook-jssdk");
+</script>
+
+<!-- Swiper init -->
+<script>
+  new Swiper('.moments-swiper', {
+    slidesPerView: 1.2, spaceBetween: 16, loop: true,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    breakpoints: {
+      640: { slidesPerView: 2, spaceBetween: 20 },
+      1024: { slidesPerView: 3, spaceBetween: 24 },
+    }
+  });
+</script>
+
+<!-- AOS init -->
+<script>AOS.init({ duration: 600, once: true, easing: 'ease-out-quad' });</script>
+</body>
+</html>
