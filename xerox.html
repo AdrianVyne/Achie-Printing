@@ -1,463 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Achie's Printing - Photocopy Product Page</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photocopy Service Davao | Achie's Printing – Doña Pilar</title>
+  <meta name="description" content="Fast photocopy services at Achie's Printing, Doña Pilar Village, Davao. Black-and-white and color photocopying, no minimum. Message us on Facebook!">
+  <link rel="canonical" href="https://adrianvyne.github.io/Achie-Printing/xerox.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://adrianvyne.github.io/Achie-Printing/xerox.html">
+  <meta property="og:title" content="Photocopy Service – Achie's Printing Davao">
+  <meta property="og:description" content="Fast photocopying at Achie's Printing, Doña Pilar, Davao. No minimum order.">
+  <meta property="og:image" content="https://adrianvyne.github.io/Achie-Printing/img/photocopier.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Photocopy Service – Achie's Printing Davao">
+  <meta name="twitter:description" content="Fast black-and-white and color photocopying in Doña Pilar, Davao.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { coral: '#FF6B6B', sunny: '#FFD93D', mint: '#6BCB77', charcoal: '#2D2D2D', cream: '#FFFDF7' },
+          fontFamily: { nunito: ['Nunito', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-cream font-nunito text-charcoal">
 
-  <!-- BOOTSTRAP ICONS 1.10.3  CDN-->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-  />
-  <!-- BOOTSTRAP 5.2 CDN-->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-  />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Swiffy slider CDN-->
-  <script
-    src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
-    crossorigin="anonymous"
-    defer
-  ></script>
-  <link
-    href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
-    rel="stylesheet"
-    crossorigin="anonymous"
-  />
-
-  <!-- HOMEMADE CSS-->
-  <link href="styles.css" rel="stylesheet" type="text/css" />
-
-  <body>
-    <!-----top nav bar-------->
-    <nav class="navbar navbar-expand-sm bars" id="home">
-      <div class="container-fluid ps-3">
-        <a href="index.html"> <img src="img/vinyl.png" height="50px" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
-        >
-          <form class="d-md-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Product Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-search"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                />
-              </svg>
-            </button>
-          </form>
-        </div>
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-cream border-b-2 border-charcoal font-nunito" x-data="{ open: false }">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="img/favicon.png" alt="Achie's Printing" class="h-9 w-9 rounded-full border-2 border-charcoal object-cover">
+        <span class="font-black text-xl text-charcoal leading-tight">Achie's<br><span class="text-coral">Printing</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="index.html#products" class="font-bold text-charcoal hover:text-coral transition-colors">Products</a>
+        <a href="index.html#contact" class="font-bold text-charcoal hover:text-coral transition-colors">Contact</a>
+        <a href="index.html#faq" class="font-bold text-charcoal hover:text-coral transition-colors">FAQ</a>
+        <a href="https://m.me/110237597413659" target="_blank" rel="noopener"
+           class="sticker-btn bg-coral text-white px-5 py-2 text-sm">Message Us</a>
       </div>
-    </nav>
-    <!-----bottom nav bar -------->
-    <div class="text-center fixed-bottom mb-lg-5 rounded-2 mb-2">
-      <a href="index.html#ProductsandServices">
-        <button type="button" class="btn-bd-primary">Home</button></a
-      >
-
-      <a href="#home">
-        <button type="button" class="btn-bd-primary">
-          <img src="img/arrow-up.svg" /></button
-      ></a>
+      <button @click="open = !open" class="md:hidden p-1" aria-label="Toggle menu">
+        <i class="ph ph-list text-2xl text-charcoal" x-show="!open" x-cloak></i>
+        <i class="ph ph-x text-2xl text-charcoal" x-show="open" x-cloak></i>
+      </button>
     </div>
-    <!------PLACE NEW INPUT HERE -------->
-    <!------PLACE NEW INPUT HERE -------->
-    <!------PLACE NEW INPUT HERE -------->
-    <div class="container">
-      <div id="pic1">
-        <div class="col-md-12">
-          <img
-            alt=""
-            src="image1.jpg"
-            height="525px"
-            style="float: left"
-            class="me-5 sizechange"
-          />
-          <h1>PRICE</h1>
-          <p class="other-site-font">
-            Consectetur eos, repudiandae, ea iusto repellat iure nam, dolores
-            molestiae cum explicabo quibusdam. Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <div class="p-2 .d-none .d-sm-block" style="opacity: 0"></div>
-        </div>
+    <div x-show="open" x-transition class="md:hidden pb-4 flex flex-col gap-3 border-t border-charcoal/20 pt-3">
+      <a href="index.html#products" @click="open=false" class="font-bold text-charcoal py-1">Products</a>
+      <a href="index.html#contact" @click="open=false" class="font-bold text-charcoal py-1">Contact</a>
+      <a href="index.html#faq" @click="open=false" class="font-bold text-charcoal py-1">FAQ</a>
+      <a href="https://m.me/110237597413659" target="_blank" rel="noopener"
+         class="sticker-btn bg-coral text-white px-5 py-3 text-center text-sm">Message Us</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="bg-cream py-16 relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-96 h-96 bg-sunny/25 rounded-full translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-72 h-72 bg-mint/20 rounded-full -translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 relative z-10">
+    <div class="flex-1 text-center md:text-left" data-aos="fade-right">
+      <a href="index.html#products" class="inline-flex items-center gap-1 text-charcoal/60 text-sm font-bold mb-4 hover:text-coral transition-colors">
+        <i class="ph ph-arrow-left"></i> All Products
+      </a>
+      <h1 class="font-nunito font-black text-4xl md:text-5xl lg:text-6xl text-charcoal leading-tight mb-4">
+        Photocopy <span class="text-coral">Service</span>
+      </h1>
+      <p class="font-nunito text-lg text-charcoal/70 mb-8 max-w-md mx-auto md:mx-0">
+        Quick black-and-white and color photocopying at Doña Pilar, Davao. No minimum order. Bring your documents and we'll get them done fast.
+      </p>
+      <a href="https://m.me/110237597413659" target="_blank" rel="noopener"
+         class="sticker-btn bg-coral text-white px-8 py-4 text-lg">Order via Messenger →</a>
+    </div>
+    <div class="flex-1 flex justify-center" data-aos="fade-left">
+      <img src="img/hero-xerox.png" alt="Sticker-style Filipino using a photocopier"
+           class="w-full max-w-sm drop-shadow-2xl">
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="font-nunito font-black text-3xl text-charcoal text-center mb-10" data-aos="fade-up">Sample Work</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <a class="glightbox sticker-card overflow-hidden block" href="img/photocopier.png" data-gallery="xerox-gallery"
+         data-description="Photocopy service – Achie's Printing Davao" data-aos="fade-up" data-aos-delay="0">
+        <img src="img/photocopier.png" alt="Photocopy service 1 – Achie's Printing Davao" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+      </a>
+      <a class="glightbox sticker-card overflow-hidden block" href="img/doc-front.jpg" data-gallery="xerox-gallery"
+         data-description="Photocopy service – Achie's Printing Davao" data-aos="fade-up" data-aos-delay="50">
+        <img src="img/doc-front.jpg" alt="Photocopy service 2 – Achie's Printing Davao" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+      </a>
+      <a class="glightbox sticker-card overflow-hidden block" href="img/mockup-xerox.jpg" data-gallery="xerox-gallery"
+         data-description="Photocopy service – Achie's Printing Davao" data-aos="fade-up" data-aos-delay="100">
+        <img src="img/mockup-xerox.jpg" alt="Photocopy mockup – Achie's Printing Davao" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+      </a>
+      <a class="glightbox sticker-card overflow-hidden block" href="img/photocopier.png" data-gallery="xerox-gallery"
+         data-description="Photocopy service – Achie's Printing Davao" data-aos="fade-up" data-aos-delay="150">
+        <img src="img/photocopier.png" alt="Photocopy service 4 – Achie's Printing Davao" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+      </a>
+      <a class="glightbox sticker-card overflow-hidden block" href="img/doc-front.jpg" data-gallery="xerox-gallery"
+         data-description="Photocopy service – Achie's Printing Davao" data-aos="fade-up" data-aos-delay="200">
+        <img src="img/doc-front.jpg" alt="Photocopy service 5 – Achie's Printing Davao" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+      </a>
+      <a class="glightbox sticker-card overflow-hidden block" href="img/mockup-xerox.jpg" data-gallery="xerox-gallery"
+         data-description="Photocopy service – Achie's Printing Davao" data-aos="fade-up" data-aos-delay="250">
+        <img src="img/mockup-xerox.jpg" alt="Photocopy mockup 2 – Achie's Printing Davao" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section class="py-16 bg-cream">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="font-nunito font-black text-3xl text-charcoal mb-6" data-aos="fade-up">About Photocopy Service</h2>
+    <article class="font-nunito text-charcoal/70 leading-relaxed space-y-4 mb-10" data-aos="fade-up" data-aos-delay="100">
+      <p>We offer fast black-and-white and color photocopying for any document — IDs, forms, books, receipts, and more. No minimum order. Perfect for students and offices.</p>
+    </article>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="sticker-card p-4 text-center" data-aos="fade-up" data-aos-delay="0">
+        <i class="ph ph-student text-3xl text-coral mb-2 block"></i>
+        <span class="font-nunito font-bold text-sm text-charcoal">Students</span>
       </div>
-      <div id="pic2">
-        <div class="col-md-12">
-          <img
-            alt=""
-            src="image2.jpg"
-            height="525px"
-            style="float: left"
-            class="me-5 sizechange"
-          />
-          <h1>PRICE</h1>
-          <p class="other-site-font">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur eos, repudiandae, ea iusto repellat iure nam, dolores
-            molestiae cum explicabo quibusdam.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <div class="p-2" style="opacity: 0"></div>
-        </div>
+      <div class="sticker-card p-4 text-center" data-aos="fade-up" data-aos-delay="50">
+        <i class="ph ph-buildings text-3xl text-coral mb-2 block"></i>
+        <span class="font-nunito font-bold text-sm text-charcoal">Offices</span>
       </div>
-      <div id="pic3">
-        <div class="col-md-12">
-          <img
-            alt=""
-            src="image3.jpg"
-            height="525px"
-            style="float: left"
-            class="me-5 sizechange"
-          />
-          <h1>PRICE</h1>
-          <p class="other-site-font">
-            Consectetur eos, repudiandae, ea iusto repellat iure nam, dolores
-            molestiae cum explicabo quibusdam. Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <div class="p-2" style="opacity: 0"></div>
-        </div>
+      <div class="sticker-card p-4 text-center" data-aos="fade-up" data-aos-delay="100">
+        <i class="ph ph-book-open text-3xl text-coral mb-2 block"></i>
+        <span class="font-nunito font-bold text-sm text-charcoal">Books</span>
       </div>
-      <div id="pic4">
-        <div class="col-md-12">
-          <img
-            alt=""
-            src="image4.jpg"
-            height="525px"
-            style="float: left"
-            class="me-5 sizechange"
-          />
-          <h1>PRICE</h1>
-          <p class="other-site-font">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur eos, repudiandae, ea iusto repellat iure nam, dolores
-            molestiae cum explicabo quibusdam.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <div class="p-2" style="opacity: 0"></div>
-        </div>
-      </div>
-      <div id="pic5">
-        <div class="col-md-12">
-          <img
-            alt=""
-            src="image5.jpg"
-            height="525px"
-            style="float: left"
-            class="me-5 sizechange"
-          />
-          <h1>PRICE</h1>
-          <p class="other-site-font">
-            Consectetur eos, repudiandae, ea iusto repellat iure nam, dolores
-            molestiae cum explicabo quibusdam. Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <div class="p-2" style="opacity: 0"></div>
-        </div>
-      </div>
-      <div id="pic6">
-        <div class="col-md-12">
-          <img
-            alt=""
-            src="image6.jpg"
-            height="525px"
-            style="float: left"
-            class="me-5 sizechange"
-          />
-          <h1>PRICE</h1>
-          <p class="other-site-font">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur eos, repudiandae, ea iusto repellat iure nam, dolores
-            molestiae cum explicabo quibusdam.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <div class="p-2" style="opacity: 0"></div>
-        </div>
+      <div class="sticker-card p-4 text-center" data-aos="fade-up" data-aos-delay="150">
+        <i class="ph ph-file text-3xl text-coral mb-2 block"></i>
+        <span class="font-nunito font-bold text-sm text-charcoal">Forms</span>
       </div>
     </div>
-    <div class="col-5 d-none d-sm-block">
-      <div class="p-2" style="opacity: 0">
-        <p>&nbsp;</p>
+  </div>
+</section>
+
+<!-- RELATED PRODUCTS -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="font-nunito font-black text-2xl text-charcoal text-center mb-8" data-aos="fade-up">You Might Also Like</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <a href="docs.html" class="sticker-card product-card" data-aos="fade-up" data-aos-delay="0">
+        <img src="img/doc-front.jpg" alt="Document printing – Achie's Printing Davao" class="img-default">
+        <img src="img/mockup-docs.jpg" alt="Document print sample" class="img-hover">
+        <span class="card-label">Document Print</span><span class="card-order">Order This →</span>
+      </a>
+      <a href="laminate.html" class="sticker-card product-card" data-aos="fade-up" data-aos-delay="50">
+        <img src="img/lam-front.jpg" alt="Lamination service – Achie's Printing Davao" class="img-default">
+        <img src="img/mockup-lam.jpg" alt="Lamination sample" class="img-hover">
+        <span class="card-label">Lamination</span><span class="card-order">Order This →</span>
+      </a>
+      <a href="id.html" class="sticker-card product-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="img/id-front.jpg" alt="ID photo printing – Achie's Printing Davao" class="img-default">
+        <img src="img/mockup-id.jpg" alt="ID photo sample" class="img-hover">
+        <span class="card-label">ID Photo</span><span class="card-order">Order This →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta">
+  <div class="max-w-2xl mx-auto flex items-center justify-between gap-4">
+    <p class="font-nunito font-bold text-charcoal text-sm hidden sm:block">Need something photocopied?</p>
+    <a href="https://m.me/110237597413659" target="_blank" rel="noopener"
+       class="sticker-btn bg-coral text-white px-6 py-2 text-sm w-full sm:w-auto text-center">Message Us Now →</a>
+  </div>
+</div>
+
+<!-- FLOATING CTA -->
+<div class="messenger-float" style="bottom: 5rem;">
+  <a href="https://m.me/110237597413659" target="_blank" rel="noopener"
+     aria-label="Message Achie's Printing on Facebook Messenger"
+     class="sticker-btn bg-coral text-white flex items-center gap-2 px-4 py-3 text-sm">
+    <i class="ph-fill ph-messenger-logo text-xl"></i>
+    <span class="hidden sm:inline font-bold">Message Us</span>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-charcoal text-cream py-12 font-nunito">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-white/20">
+      <div>
+        <h3 class="font-black text-xl text-white mb-2">Achie's Printing</h3>
+        <p class="text-white/70 text-sm leading-relaxed">The printing shop Doña Pilar grew up with. Quick, honest, and priced right.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-3">Store Hours</h4>
+        <p class="text-white/70 text-sm">Monday – Sunday</p>
+        <p class="text-white/70 text-sm">8:00 AM – 7:00 PM</p>
+        <p class="text-white/50 text-xs mt-1">Philippine Time (UTC+08:00)</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-3">Connect</h4>
+        <div class="flex gap-3 mb-4">
+          <a href="https://www.facebook.com/profile.php?id=100052801946765" target="_blank" rel="noopener" aria-label="Facebook"
+             class="bg-white/10 hover:bg-coral rounded-full p-2 transition-colors">
+            <i class="ph ph-facebook-logo text-xl text-white"></i></a>
+          <a href="mailto:ansheened@gmail.com" aria-label="Email"
+             class="bg-white/10 hover:bg-coral rounded-full p-2 transition-colors">
+            <i class="ph ph-envelope text-xl text-white"></i></a>
+          <a href="https://m.me/110237597413659" target="_blank" rel="noopener" aria-label="Messenger"
+             class="bg-white/10 hover:bg-coral rounded-full p-2 transition-colors">
+            <i class="ph ph-messenger-logo text-xl text-white"></i></a>
+        </div>
+        <a href="https://m.me/110237597413659" target="_blank" rel="noopener"
+           class="sticker-btn bg-coral text-white px-5 py-2 text-sm block text-center">Send us a message</a>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 col-md-9">
-          <div class="d-lg-flex"></div>
-          <div class="row">
-            <div class="col-md-12">
-              <div
-                class="swiffy-slider slider-item-show9 slider-nav-dark slider-nav-visible slider-nav-caretfill"
-              >
-                <div class="slider-container d-flex">
-                  <div>
-                    <div id="slide1" class="card" style="width: 6rem">
-                      <a href="#txt1"
-                        ><a href="#pic1"
-                          ><button>
-                            <img
-                              alt=".."
-                              src="image1.jpg"
-                              class="card-img-top"
-                            /></button></a
-                      ></a>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="slide2" class="card" style="width: 6rem">
-                      <a href="#pic2"
-                        ><button>
-                          <img
-                            alt=".."
-                            src="image2.jpg"
-                            class="card-img-top"
-                          /></button
-                      ></a>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="slide3" class="card" style="width: 6rem">
-                      <a href="#pic3"
-                        ><button>
-                          <img
-                            alt=".."
-                            src="image3.jpg"
-                            class="card-img-top"
-                          /></button
-                      ></a>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="slide4" class="card" style="width: 6rem">
-                      <a href="#pic4"
-                        ><button>
-                          <img
-                            alt=".."
-                            src="image4.jpg"
-                            class="card-img-top"
-                          /></button
-                      ></a>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="slide5" class="card" style="width: 6rem">
-                      <a href="#pic5"
-                        ><button>
-                          <img
-                            alt=".."
-                            src="image5.jpg"
-                            class="card-img-top"
-                          /></button
-                      ></a>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="slide6" class="card" style="width: 6rem">
-                      <a href="#pic6"
-                        ><button>
-                          <img
-                            alt=".."
-                            src="image6.jpg"
-                            class="card-img-top"
-                          /></button
-                      ></a>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="slide7" class="card" style="width: 6rem">
-                      <a href="#pic1"
-                        ><button>
-                          <img
-                            alt=".."
-                            src="image1.jpg"
-                            class="card-img-top"
-                          /></button
-                      ></a>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="slide8" class="card" style="width: 6rem">
-                      <a href="#pic2"
-                        ><button>
-                          <img
-                            alt=".."
-                            src="image2.jpg"
-                            class="card-img-top"
-                          /></button
-                      ></a>
-                    </div>
-                  </div>
-                  <div>
-                    <div id="slide9" class="card" style="width: 6rem">
-                      <a href="#pic3"
-                        ><button>
-                          <img
-                            alt=".."
-                            src="image3.jpg"
-                            class="card-img-top"
-                          /></button
-                      ></a>
-                    </div>
-                  </div>
-                </div>
+    <p class="text-center text-white/40 text-xs mt-6">© 2025 Achie's Printing – Doña Pilar Village, Davao City, Philippines</p>
+  </div>
+</footer>
 
-                <button type="button" class="slider-nav"></button>
-                <button
-                  type="button"
-                  class="slider-nav slider-nav-next"
-                ></button>
-
-                <div class="slider-indicators">
-                  <div class="active"></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5"></div>
-      </div>
-    </div>
-    <!------PLACE NEW INPUT HERE -------->
-    <!------PLACE NEW INPUT HERE -------->
-    <!------PLACE NEW INPUT HERE -------->
-    <!------PLACE NEW INPUT HERE -------->
-    <!-----footer-------->
-    <footer class="py-5 border-top greenbg dark-colorfont">
-      <div class="container-fluid mt-3">
-        <div class="row justify-content-center">
-          <div class="col-md-4 col-sm-4">
-            <h2>Achie's Printing</h2>
-            <h6>
-              we're more than just a printing shop - we're part of the community
-            </h6>
-          </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-4 col-sm-6">
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://www.facebook.com/profile.php?id=100052801946765"
-                target="_blank"
-                class="sociallinks"
-              >
-                <img
-                  src="img/facebook.svg"
-                  class="card-img-top p-2"
-                  alt="facebook icon"
-                  height="50rem"
-                />
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                class="sociallinks"
-              >
-                <img
-                  src="img/instagram.svg"
-                  class="card-img-top p-2"
-                  alt="Instagram Icon"
-                  height="50rem"
-                />
-              </a>
-              <a href="http://twitter.com/" target="_blank" class="sociallinks">
-                <img
-                  src="img/twitter.svg"
-                  class="card-img-top p-2"
-                  alt="Twitter Icon"
-                  height="50rem"
-                />
-              </a>
-              <a
-                href="mailto:ansheened@gmail.com"
-                target="_blank"
-                class="sociallinks"
-              >
-                <img
-                  src="img/envelope-at-fill.svg"
-                  class="card-img-top p-2"
-                  alt="Email Icon"
-                  height="50rem"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
-    <script>
-      var chatbox = document.getElementById("fb-customer-chat");
-      chatbox.setAttribute("page_id", "110237597413659");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v15.0",
-        });
-      };
-
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-  </body>
+<div id="fb-root"></div>
+<div id="fb-customer-chat" class="fb-customerchat"></div>
+<script>
+  var chatbox = document.getElementById("fb-customer-chat");
+  chatbox.setAttribute("page_id", "110237597413659");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+<script>
+  window.fbAsyncInit = function () { FB.init({ xfbml: true, version: "v15.0" }); };
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, "script", "facebook-jssdk");
+</script>
+<script>GLightbox({ selector: '.glightbox' });</script>
+<script>AOS.init({ duration: 600, once: true, easing: 'ease-out-quad' });</script>
+</body>
 </html>
